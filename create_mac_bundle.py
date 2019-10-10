@@ -74,7 +74,7 @@ resource_files.append(resource_file)
 
 setup(
     options=dict(py2app=dict(
-        arch='i386',
+        arch='x86_64',
         plist=dict(
             CFBundleDevelopmentRegion="English",
             CFBundleDisplayName=myname,
@@ -84,7 +84,7 @@ setup(
             CFBundleName="Strudel",
             CFBundlePackageType="APPL",
             CFBundleVersion="Version " + launcher_version_number.version_number,
-            LSArchitecturePriority=["i386"]
+            LSArchitecturePriority=["x86_64"]
             )
         )
     ),
